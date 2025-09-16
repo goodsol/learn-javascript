@@ -11,8 +11,10 @@ console.log("데이식스의 막내는", day6[day6.length - 1] + "입니다")
 const person = {
   name: "조은솔",
   isMale : false,
-  mbti : "ESFJ"
+  mbti : "ESFJ",
+  favoriteFoods: ["햄버거","떡볶이","돈까스"]
 }
 console.log("🚀 ~ person:", person)
 console.log("name:", person["name"])
 console.log("남성 여부:", person.isMale)
+console.log(person.name+"이 두 번째로 좋아하는 음식은", person.favoriteFoods[1]+"♥")
