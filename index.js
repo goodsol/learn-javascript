@@ -150,10 +150,10 @@ if (0) { // 0 == false, 1 == true
   console.log("False")
 }
 
-// const userInput = "" // ""(빈 문자열) == false, "" === true
+const userInput = "" // ""(빈 문자열) == false, "" === true
 
-// if (userInput) {
-//   alert("입력해주셔서 감사합니다")
-// } else {
-//   alert("입력값을 작성해주세요")
-// }
+if (userInput) {
+  alert("입력해주셔서 감사합니다")
+} else {
+  alert("입력값을 작성해주세요")
+}
