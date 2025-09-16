@@ -88,3 +88,15 @@ const double = (num) => {
 
 const doubleResult = double(add);
 console.log("🚀 ~ doubleResult:", doubleResult)
+
+console.log("======================================================================")
+
+// 조건문
+const score = 60;
+if (score >= 60) {
+  // 조건식이 true일 경우 실행할 코드
+  console.log(`수험자의 점수는 ${score}이므로, 합격입니다!`)
+} else {
+  // 조건식이 false일 경우 실행할 코드
+  console.log(`수험자의 점수는 ${score}이므로, 불합격입니다.`)
+}
