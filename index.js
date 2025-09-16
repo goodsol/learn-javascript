@@ -33,7 +33,7 @@ null : 개발자가 의도를 가지고 값을 비움
 undefined : 개발자 의도와 상관없이 값이 없는 상태
 */
 
-console.log("======================================================================")
+console.log("=====================================================================")
 
 // 함수
 
@@ -89,7 +89,7 @@ const double = (num) => {
 const doubleResult = double(add);
 console.log("🚀 ~ doubleResult:", doubleResult)
 
-console.log("======================================================================")
+console.log("=====================================================================")
 
 // 조건문
 const score = 60;
@@ -100,3 +100,60 @@ if (score >= 60) {
   // 조건식이 false일 경우 실행할 코드
   console.log(`수험자의 점수는 ${score}이므로, 불합격입니다.`)
 }
+
+let grade = "";
+
+if (score >= 90) {
+  grade = "A등급";
+} else if (score >= 80) {
+  grade = "B등급";
+} else if (score >= 70) {
+  grade = "C등급";
+} else {
+  grade = "D등급";
+}
+
+console.log("🚀 ~ grade:", grade)
+
+let type = "";
+
+const orderSandwich = (type = "basic") => { // default parameter
+  
+  // 조건문 활용
+  // if (type == null) {
+  //   return `🥖 + 🥬 + 🍅 + 🧀 + 🥓`
+  // } else if (type === "basic") {
+  //   return `🥖 + 🥬 + 🍅 + 🧀 + 🥓`
+  // } else if (type === "vegan") {
+  //   return `🥖 + 🥬 + 🍅 + 🥑 + 🥒`
+  // } else {
+  //   return ""
+  // }
+  
+  // 삼항 연산자 활용
+  return type === "basic" ? `🥖 + 🥬 + 🍅 + 🧀 + 🥓` : `🥖 + 🥬 + 🍅 + 🥑 + 🥒`
+}
+
+console.log("기본 샌드위치 주문: " + orderSandwich());
+console.log("기본 샌드위치 주문: " + orderSandwich('basic'));
+console.log("비건 샌드위치 주문: " + orderSandwich('vegan'));
+
+// 삼항 연산자 실습
+const age = 20;
+const adultType = age >= 18 ? `성인` : `미성년자`;
+console.log("🚀 ~ adultType:", adultType)
+
+// 비교 연산자
+if (0) { // 0 == false, 1 == true
+  console.log("True")
+} else {
+  console.log("False")
+}
+
+// const userInput = "" // ""(빈 문자열) == false, "" === true
+
+// if (userInput) {
+//   alert("입력해주셔서 감사합니다")
+// } else {
+//   alert("입력값을 작성해주세요")
+// }
